@@ -10,7 +10,9 @@
   --color-black-alpha: rgba(7, 7, 7, 0.97);
 }
 
+
 /* normalization */
+
 
 * {
   box-sizing: border-box;
@@ -19,7 +21,7 @@
   outline: none;
 }
 
-.html {scroll-behavior: smooth; }
+.html { scroll-behavior: smooth; }
 
 .body {
   font-family: 'Open Sans', sans-serif;
@@ -27,7 +29,6 @@
   color: var(--color-white);
   overflow-x: hidden;
 }
-
 
 
 /* common */
@@ -82,11 +83,7 @@
 }
 
 
-
-
 /* header */
-
-
 
 
 .header {
@@ -168,9 +165,7 @@ so if hamburger didn't work - update yourself immediately :)  */
   background-color: var(--color-white);
 }
 
-.nav__button:focus ~ .nav__shallow {
-  z-index: 4;
-}
+.nav__button:focus ~ .nav__shallow { z-index: 4; }
 
 .nav__button:focus ~ .nav__list { transform: translate(0, 0); }
 
@@ -210,11 +205,7 @@ so if hamburger didn't work - update yourself immediately :)  */
 .nav__link:hover { color: var(--color-orange); }
 
 
-
-
 /* banner */
-
-
 
 
 .banner {
@@ -301,13 +292,9 @@ because has a text inside which replicates the whole phrase */
   user-select: none;
 }
 
-.banner__span_left {
-  align-self: flex-start;
-}
+.banner__span_left { align-self: flex-start; }
 
-.banner__span_right {
-  align-self: flex-end;
-}
+.banner__span_right { align-self: flex-end; }
 
 .banner__span_crossed::after {
   content: '';
@@ -323,7 +310,6 @@ because has a text inside which replicates the whole phrase */
 
 
 /* projects */
-
 
 
 .gallery {
@@ -401,6 +387,7 @@ because has a text inside which replicates the whole phrase */
 
 /* footer */
 
+
 .icons {
   display: flex;
   justify-content: center;
@@ -410,9 +397,7 @@ because has a text inside which replicates the whole phrase */
 
 .icons:hover > .icons__link { opacity: 0; }
 
-.icons > .icons__link:hover {
-  opacity: 1;
-}
+.icons > .icons__link:hover { opacity: 1; }
 
 .icons__link {
   position: relative;
@@ -454,9 +439,9 @@ because has a text inside which replicates the whole phrase */
 
 /* for ppl who hate animated scrollings */
 @media screen and (prefers-reduced-motion: reduce) {
-  .html {
-    scroll-behavior: auto;
-  }
+
+  .html { scroll-behavior: auto; }
+
 }
 
 @media screen and (min-width: 580px) {
@@ -528,9 +513,12 @@ because has a text inside which replicates the whole phrase */
     width: 0;
     margin: 24px 0px;
   }
+
 }
 
+
 /* animations */
+
 
 @keyframes fadeIn {
   from { opacity: 0; }
