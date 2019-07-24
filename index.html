@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Front-End Developer Anton Kiryienka portfolio</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    /* animation is used to get rid of fouc (flash of unstyled content) on firefox */
+    @keyframes fadeInBody {
+      0% {
+        opacity: 0;
+        background-color: rgb(12, 12, 12);
+      }
+      60% {
+        opacity: 1;
+        background-color: rgb(12, 12, 12);
+      }
+      100%{
+        opacity: 1;
+        background-color: transparent;
+      }
+    }
+    .fade-in-body {
+      opacity: 0;
+      background-color: rgb(12, 12, 12);
+      animation: fadeInBody ease-in 1;
+      animation-fill-mode: forwards;
+      animation-duration: 1s;
+      animation-delay: 0.6s;
+    }
+  </style>
+</head>
+<body class="body fade-in-body" ontouchstart>
+  <header class="header">
+    <nav class="nav">
+      <button class="nav__button"></button>
+      <div class="nav__shallow"></div>
+      <div class="hamburger">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#home" class="link nav__link">home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="link nav__link">about</a>
+        </li>
+        <li class="nav__item">
+          <a href="#projects" class="link nav__link">projects</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="link nav__link">contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+
+    <section class="banner" id="home">
+      <div class="banner__background banner__background_image"></div>
+      <div class="banner__background banner__background_color"></div>
+      <div class="banner__container fade-in">
+        <h1 class="banner__heading">
+          <span class="banner__span_big banner__span_left fade-in fade-in_one">Anton</span>
+          <span class="banner__span_parent fade-in fade-in_three">
+            <span class="banner__span_small banner__span_media-hide">initia</span>
+            <span class="banner__span_relative banner__span_media-hide">
+              <span class="banner__span_small banner__span_fake">tive lized recently developer</span>
+              <span class="banner__span_absolute">
+                <span class="banner__span_small fade-in fade-in_four">tive&#160;</span>
+                <span class="banner__span_movable move-right">
+                  <span class="banner__span_small banner__span_crossed line-through">lized recently</span>
+                  <span class="banner__span_whitespace">&#160;</span>
+                  <span class="banner__span_small">developer</span>
+                </span>
+              </span>
+            </span>
+          </span>
+          <span class="banner__span_parent banner__span_small banner__span_column">
+            <span class="banner__span_small">initiative</span>
+            <span class="banner__span_whitespace banner__span_zerofont">&#160;</span>
+            <span class="banner__span_relative banner__span_crossed">lized recently</span>
+            <span class="banner__span_whitespace banner__span_zerofont">&#160;</span>
+            <span class="banner__span_small">developer</span>
+          </span>
+          <span class="banner__span_big  banner__span_right fade-in fade-in_two">Kiryienka</span>
+        </h1>
+      </div>
+    </section>
+
+    <section class="section section_white section_gradient" id="about">
+      <article class="container">
+        <h2 class="h2 h2_black">About Me</h2>
+        <p class="text text_black">
+          Hi! A novice Front-End Developer that currently is seeking for opportunities to become a hard-boiled one
+          through solving real-world challenges welcomes you. As a person who got in touch with development side of web
+          not so long ago I'm confident only in core technologies such as <span class="text_flag">html</span>,
+          <span class="text_flag">css</span> and <span class="text_flag">javascript</span> (there is a big room for growth though).
+          Besides I've also grasped basics of <span class="text_flag">react</span>, <span class="text_flag">redux</span>,
+          <span class="text_flag">nodejs</span>, <span class="text_flag">git</span> and others.
+        </p>
+        <p class="text text_black text_left">Long story short:</p>
+      </article>
+    </section>
+
+    <section class="section section_white" id="projects">
+      <div class="container">
+        <h2 class="h2 h2_black">Projects</h2>
+        <div class="gallery">
+          <figure class="gallery-item">
+            <div class="gallery-item__image gallery-item__image_youtube"></div>
+            <figcaption class="gallery-item__caption">
+              <h3 class="h3 h3_black">youtube-client</h3>
+              <p class="text text_black">
+                App which uses youtube API to search and fetch information about videos.
+              </p>
+              <div class="gallery-item__tags">
+                <span class="gallery-item__tag">responsive</span>
+                <span class="gallery-item__tag">react</span>
+                <span class="gallery-item__tag">redux</span>
+                <span class="gallery-item__tag">webpack</span>
+                <span class="gallery-item__tag">styled components</span>
+                <span class="gallery-item__tag">youtube API</span>
+              </div>
+            </figcaption>
+            <div class="gallery-item__links">
+              <a class="link gallery-item__link" href="https://anton23kirienko.github.io/react-youtube" target="_blank">live demo</a>
+              <a class="link gallery-item__link" href="https://github.com/anton23kirienko/react-youtube" target="_blank">view source</a>
+            </div>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-item__image gallery-item__image_dashboard"></div>
+            <figcaption class="gallery-item__caption">
+              <h3 class="h3 h3_black">mentor-dashboard</h3>
+              <p class="text text_black">
+                Tool for mentors which simplifies supervision of students' performance by visualization of google spreadsheets docs.
+              </p>
+              <div class="gallery-item__tags">
+                <span class="gallery-item__tag">react</span>
+                <span class="gallery-item__tag">webpack</span>
+                <span class="gallery-item__tag">node.js</span>
+                <span class="gallery-item__tag">express</span>
+                <span class="gallery-item__tag">heroku</span>
+                <span class="gallery-item__tag">google API</span>
+              </div>
+            </figcaption>
+            <div class="gallery-item__links">
+              <a class="link gallery-item__link" href="https://anton23kirienko.github.io/mentor-github" target="_blank">live demo</a>
+              <a class="link gallery-item__link" href="https://github.com/anton23kirienko/mentor-dashboard" target="_blank">view source</a>
+            </div>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-item__image gallery-item__image_game"></div>
+            <figcaption class="gallery-item__caption">
+              <h3 class="h3 h3_black">canvas-game</h3>
+              <p class="text text_black">
+                Simple 2D canvas game with sprites and spaghetti. Desktop only.
+              </p>
+              <div class="gallery-item__tags">
+                <span class="gallery-item__tag">html</span>
+                <span class="gallery-item__tag">css</span>
+                <span class="gallery-item__tag">canvas</span>
+                <span class="gallery-item__tag">javascript</span>
+                <span class="gallery-item__tag">spaghetti code</span>
+              </div>
+            </figcaption>
+            <div class="gallery-item__links">
+              <a class="link gallery-item__link" href="https://anton23kirienko.github.io/game" target="_blank">live demo</a>
+              <a class="link gallery-item__link" href="https://github.com/anton23kirienko/canvas-game" target="_blank">view source</a>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="section section_white" id="contact">
+    <div class="container">
+      <article>
+        <h2 class="h2 h2_black">Contact Me</h2>
+        <p class="text text_black">
+          Currently I'm looking for a job located in Gomel, Belarus but feel free
+          to write me a message whatever place you are!
+        </p>
+      </article>
+      <div class="icons">
+        <a href="mailto:anton23kirienko@gmail.com" class="link icons__link">
+          <span class="icons__border">
+            <span class="icons__icon icons__icon_email"></span>
+          </span>
+        </a>
+        <a href="https://www.linkedin.com/in/antonkiryienka" class="link icons__link" target="_blank">
+          <span class="icons__border">
+            <span class="icons__icon icons__icon_in"></span>
+          </span>
+        </a>
+        <a href="skype:live:b8371b2fec9d218e?chat" class="link icons__link">
+          <span class="icons__border">
+            <span class="icons__icon icons__icon_skype"></span>
+          </span>
+        </a>
+        <a href="tg://resolve?domain=mudamudamudamu" class="link icons__link">
+          <span class="icons__border">
+            <span class="icons__icon icons__icon_telega"></span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
