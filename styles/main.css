@@ -340,6 +340,8 @@ because has a text inside which replicates the whole phrase */
   padding-bottom: 50%;
 }
 
+.gallery-item__image_todo { background-image: url(../images/todo.jpg); }
+
 .gallery-item__image_youtube { background-image: url(../images/youtube.jpg); }
 
 .gallery-item__image_dashboard { background-image: url(../images/dashboard.jpg); }
